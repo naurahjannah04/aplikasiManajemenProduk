@@ -100,10 +100,6 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {{ request()->routeIs('products.create') ? 'active fw-bold' : '' }}"
-                       href="{{ route('products.create') }}">
-                        <i class="bi bi-plus-circle me-1"></i>Tambah Produk
-                    </a>
                 </li>
             </ul>
         </div>
