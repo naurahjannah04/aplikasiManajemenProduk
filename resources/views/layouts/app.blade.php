@@ -8,18 +8,78 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
-    <style>
-        body { background-color: #f8f9fa; }
-        .navbar-brand { font-weight: 700; letter-spacing: .5px; }
-        .table th { background-color: #0d6efd; color: #fff; vertical-align: middle; }
-        .table td { vertical-align: middle; }
-        .btn-action { white-space: nowrap; }
-        .card { box-shadow: 0 2px 8px rgba(0,0,0,.08); border: none; }
-        .card-header { border-bottom: 2px solid #0d6efd; }
-        .form-label { font-weight: 500; }
-        .badge-stok { font-size: .8rem; }
-    </style>
-    @stack('styles')
+
+<style>
+    :root {
+        --bs-primary: #DCCBB8;
+        --bs-primary-rgb: 220, 203, 184;
+        --bs-primary-text-emphasis: #7a624f;
+        --bs-primary-bg-subtle: #f3eae1;
+        --bs-secondary: #f8f9fa;
+        --bs-success: #198754;
+        --bs-danger: #dc3545;
+        --bs-warning: #ffc107;
+        --bs-info: #0dcaf0;
+    }
+
+    body { background-color: #f8f9fa; }
+    .navbar-dark.bg-primary {
+        background-color: #DCCBB8 !important;
+    }
+    .navbar-brand { font-weight: 700; letter-spacing: .5px; }
+    .table th { background-color: #DCCBB8; color: #fff; vertical-align: middle; }
+    .table td { vertical-align: middle; }
+    .btn-action { white-space: nowrap; }
+    .card { box-shadow: 0 2px 8px rgba(0,0,0,.08); border: none; }
+    .card-header { border-bottom: 2px solid #DCCBB8; }
+
+    .btn-primary {
+        background-color: #DCCBB8 !important;
+        border-color: #DCCBB8 !important;
+        color: #fff !important;
+    }
+
+    .btn-primary:hover,
+    .btn-primary:focus,
+    .btn-primary:active {
+        background-color: #c8b09a !important;
+        border-color: #c8b09a !important;
+        color: #fff !important;
+    }
+
+    .btn-outline-primary {
+        color: #DCCBB8 !important;
+        border-color: #DCCBB8 !important;
+    }
+
+    .btn-outline-primary:hover,
+    .btn-outline-primary:focus,
+    .btn-outline-primary:active {
+        background-color: #DCCBB8 !important;
+        border-color: #DCCBB8 !important;
+        color: #fff !important;
+    }
+
+    .form-label { font-weight: 500; }
+    .badge-stok { font-size: .8rem; }
+
+    .badge.bg-primary {
+        background-color: #DCCBB8 !important;
+    }
+
+    .page-link {
+        color: #DCCBB8;
+    }
+
+    .page-item.active .page-link {
+        background-color: #DCCBB8;
+        border-color: #DCCBB8;
+    }
+
+    a { color: #DCCBB8; }
+    a:hover { color: #c8b09a; }
+</style>
+@stack('styles')
 </head>
 <body>
 
@@ -73,7 +133,7 @@
 </div>
 
 <footer class="text-center text-muted py-3 border-top mt-4">
-    <small>Aplikasi CRUD Produk &mdash; Laravel 13 &copy; {{ date('Y') }}</small>
+    <small>Aplikasi CRUD Produk &mdash; Naurah Jannah Alice &copy; {{ date('Y') }}</small>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
